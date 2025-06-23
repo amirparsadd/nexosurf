@@ -5,7 +5,7 @@ export function isProbablyURL(input: string) {
   try {
     const url = new URL(trimmed);
     return url.protocol === "http:" || url.protocol === "https:";
-  } catch (e) {
+  } catch (ignore) { // eslint-disable-line
     // If it's not a full URL, try matching a domain
     const domainPattern = /^(?!:\/\/)([a-zA-Z0-9-]+\.)+[a-zA-Z]{2,}$/;
     return domainPattern.test(trimmed);
