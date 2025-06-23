@@ -1,4 +1,4 @@
-# 🔥 NexoSurf
+# 🏄 NexoSurf
 
 A lightweight browser homepage built with **ReactJS** and **TailwindCSS**, using **Vite** as the build tool and **Jotai** for state management.  
 This project was created to provide a more streamlined web surfing experience and make your searching experience way better.
