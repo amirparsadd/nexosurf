@@ -1,0 +1,4 @@
+.searchbar-wrapper:has(input:focus) {
+  outline: 2px solid var(--color-blue-200);
+  outline-offset: 1px;
+}
