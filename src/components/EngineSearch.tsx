@@ -26,7 +26,7 @@ function EngineSearch({ inputFocus }: { inputFocus?: () => void }) {
           <button
             tabIndex={engine === val ? -1 : undefined}
             key={val}
-            className={`flex items-center gap-1 bg-lesslight hover:bg-lesslight/50 dark:bg-lessdark dark:hover:bg-lessdark/50 transition-colors p-2 rounded-md cursor-pointer ${engine === val ? "outline-1 outline-green-300" : ""}`}
+            className={`shadow-md flex items-center gap-1 bg-lesslight hover:bg-lesslight/50 dark:bg-lessdark dark:hover:bg-lessdark/50 transition-colors p-2 rounded-md cursor-pointer ${engine === val ? "outline-1 outline-green-300" : ""}`}
             onClick={() => {
               const inputSplit = input.trim().split(" ")
 
