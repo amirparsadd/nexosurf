@@ -1,3 +1,9 @@
+/**
+ * Checks a piece of text to see if the text is possibly a URL 
+ * 
+ * @param input candidate text
+ * @returns true if the text is possibly a URL, otherwise false
+ */
 export function isProbablyURL(input: string) {
   const trimmed = input.trim();
 

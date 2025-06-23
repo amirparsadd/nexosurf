@@ -15,6 +15,12 @@ export function searchEngines(text: string, max?: number): string[] {
   return results
 }
 
+/**
+ * Returns an engine based on a query. falls back to DEFAULT_ENGINE if no engine was detected
+ * 
+ * @param text the text query
+ * @returns engine name
+ */
 export function getEngineNameFromQuery(text: string): string {
   if(text.trim().length === 0) return DEFAULT_ENGINE
   if(isProbablyURL(text)) return "direct"
@@ -28,6 +34,12 @@ export function getEngineNameFromQuery(text: string): string {
   return DEFAULT_ENGINE
 }
 
+/**
+ * Returns an engine based on the available short code or undefined if no engine was detected
+ * 
+ * @param text the text query
+ * @returns engine name or undefined if not found
+ */
 export function getEngineNameFromShortCode(text: string): string | undefined {
   const trimmed = text.trim();
   if (!trimmed.startsWith("/")) return;

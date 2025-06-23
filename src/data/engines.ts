@@ -1,8 +1,29 @@
 import { normalizeURL } from "../utils/url"
 
 interface Engine {
+  /**
+   * The name of the engine in human readable format.
+   * It is better to not include spaces in the name.
+   * 
+   * @example "Google"
+   */
   name: string
+
+  /**
+   * A short code for the engine used in engine detection by query
+   * 
+   * @example "g"
+   */
   short: string
+
+  /**
+   * A URL generator function used for redirecting the user to the desired search engine.
+   * 
+   * @example (q) => `https://www.google.com/search?q=${encodeURIComponent(q)}`
+   * 
+   * @param query the user's input (excluding the shortcode command)
+   * @returns the URL to redirect the user to
+   */
   url: (query: string) => string
 }
 
