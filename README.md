@@ -37,7 +37,7 @@ This project was created to provide a more streamlined web surfing experience an
 - [ ] Polish overall UI/UX
 - [ ] Make it an extension
 - [ ] Add help section
-- [ ] Add direct query support (aka `https://nexosurf.example/search?q=[Nexo Surf Query]`)
+- [ ] Add direct query support (e.g. `https://nexosurf.example/search?q=[Nexo Surf Query]`)
 
 ---
 
